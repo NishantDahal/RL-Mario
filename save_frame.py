@@ -23,7 +23,6 @@ def save_video(input_folder, output_file, fps=30):
     :param output_file: Output file name
     :param fps: Frames per second
     """
-
     image_files = [f for f in os.listdir(input_folder) if f.endswith('.png')] # Getting the image files .png only
     image_files.sort(key=lambda x: int(x.split('.')[0]))  # Sort by number
 
